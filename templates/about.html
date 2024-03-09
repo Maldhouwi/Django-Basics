@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <style>
+        table{
+            border: 2px solid white ;
+            
+            height: 400px;
+            width: 75%;
+            margin: auto;
+        }
+        table,th,td{
+            border: 2px solid white  ;
+            border-radius: 5px;
+        }
+        thead{
+            background-color: limegreen;
+            padding: 50px;
+            height: 75px;
+            
+        }
+        tbody{
+            background-color: #6dbe6d;
+        }
+        td{
+            padding-left: 70px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+
+<a  class="btn btn-danger" href="{% url 'home' %}">Home</a>
+<a  class="btn btn-primary" href="{% url 'about' %}">About</a>
+
+<table>
+    <thead>
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th>Product Quality</th>
+    <th>Product Quantity</th>
+    </thead>
+    
+    
+    <tbody>
+    
+    <tr>
+        <td>1</td>
+        <td>Wheat</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    
+     <tr>
+        <td>2</td>
+        <td>Rice</td>
+        <td>Good</td>
+        <td>250 Bags</td>
+    </tr>
+    
+     <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    
+     <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    
+     <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    
+     <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    </tbody>
+    
+</table>
+<br><br><br><br>
+
+
+<h1>Services</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, dolore eaque est exercitationem facilis fugit harum modi, molestias perferendis quam quidem unde voluptatem voluptatum! Animi aut illum laudantium quas temporibus!</p>
+<img src="{% static 'myapp/assets/aura.jfif' %}" alt="">
+
+</body>
+</html>
